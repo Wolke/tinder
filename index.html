@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交友軟體</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .slide-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .slide-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>交友軟體</h1>
+        </header>
+        <main>
+            <div id="profile-card" class="slide-in">
+                <!-- 個人資料卡片將在這裡動態生成 -->
+            </div>
+            <div id="buttons">
+                <button id="dislike">不喜歡</button>
+                <button id="like">喜歡</button>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
